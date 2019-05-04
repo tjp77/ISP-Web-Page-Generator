@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+	<title>Pa4</title>
+	<meta charset = "utf-8"/>
+	<link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+<div id = "controls" style = "background-color: WhiteSmoke;">
+<hr/>
+
+<h3 align = "center">ISP Project 4 - Theme: Blog Designer</h3>
+<h5><center><a href = "Capture.png">(Permision for single page controls + generated page design obtained before hand.)</a> ---- <a href = "features.html">Click here for features table! (separated for a better page making experience)</a></center></h5>
+	
+<hr/>
+	
+	<div id = "syst">
+
+	<span>System</span>
+	<br/><br/>
+	
+	<input type = "button" value = "Undo Last Element" onclick = "undoElem()"/>
+	<br/><br/>
+	<input type = "button" value = "Undo Last Style" onclick = "undoStyle()"/>
+	
+	</div>
+	
+	<div id = "style">
+
+	<span>Style</span>
+	<br/><br/>
+
+	<input type = "button" value = "Add background image" onclick = "addBGImage()" align = "left"/>
+	<br/><br/>
+	<input type = "button" value = "Change background color" onclick = "addBGColor()" align = "left"/>
+	<br/><br/>
+	<input type = "button" value = "Center Page" onclick = "AddCentering()" align = "left"/>
+
+	</div>
+
+	<div id = "textElements"> 
+	
+	<span>Block Text Elements</span>
+	<br/><br/>
+
+		<textarea id = "paragraphInput" rows = "5" cols = "25"></textarea>
+
+		<input type = "button" value = "Add As Paragrph" onclick = "addParagraph()"/>
+		<input type = "button" value = "Add As Blockquote" onclick = "addQuote()"/>
+		<br/><br/>
+
+	
+	</div>
+
+	<div id = "mediaElements">
+
+	<span>Media Elements</span>
+	<br/><br/>
+
+		<input type = "button" value = "Add embedded item" onclick = "addEmbed()"/>
+		<br/><br/>
+		<input type = "button" value = "Add a video" onclick = "addVideo()"/>
+		<br/><br/>
+		<input type = "button" value = "Add a Audio" onclick = "addAudio()"/>
+		<br/><br/>
+		<input type = "button" value = "Add image" onclick = "addImage()"/>
+
+
+		<br/><br/>
+	</div>
+
+	<div id = "otherElements">
+
+	<span>Other Elements</span>
+	<br/><br/>
+
+		<input type = "button" value = "Add Line Break" onclick = "addBr()"/>
+		<input type = "button" value = "Add hr" onclick = "addHr()"/>
+		<input type = "button" value = "Add header" onclick = "addHeader()"/>
+	
+		<br/><br/>
+		
+		<input type = "button" value = "Add current date" onclick = "addDate()"/>
+		<input type = "button" value = "Add current time" onclick = "addTime()"/>
+		
+		<br/><br/>
+
+		<input type = "button" value = "Add a list" onclick = "addList()"/>
+		<input type = "button" value = "Add an Abbreviation" onclick = "addAbbv()"/>	
+		<input type = "button" value = "Add citation" onclick = "addCitation()"/>
+
+		<br/><br/>
+
+		<input type = "button" value = "Add a link" onclick = "addLink()"/>
+		<br/><br/>
+
+	</div>
+	
+</div>
+
+<hr/>
+
+<div id = "userPage"> 
+
+
+</div>
+
+<script type = "text/javascript" src = "script.js"></script>
+
+
+</body>
+
+
+</html>
